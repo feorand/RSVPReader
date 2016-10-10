@@ -10,10 +10,10 @@ import Foundation
 
 class Text {
     
-    let words: [String]
-    let count: Int
+    private let words: [String]
+    private let count: Int
     
-    var nextWord = 0
+    private var nextWord = 0
     
     init(fromSource text:String) {
         words = text.components(separatedBy: " ")
