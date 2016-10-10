@@ -15,6 +15,7 @@
 		7A6BB9E91DAB58B600CBADB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A6BB9E71DAB58B600CBADB7 /* LaunchScreen.storyboard */; };
 		7A6BB9F41DAB58B600CBADB7 /* RSVPReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6BB9F31DAB58B600CBADB7 /* RSVPReaderTests.swift */; };
 		7A6BB9FF1DAB58B600CBADB7 /* RSVPReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6BB9FE1DAB58B600CBADB7 /* RSVPReaderUITests.swift */; };
+		7A6BBA0D1DAB66A000CBADB7 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6BBA0C1DAB66A000CBADB7 /* Text.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		7A6BB9FA1DAB58B600CBADB7 /* RSVPReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSVPReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A6BB9FE1DAB58B600CBADB7 /* RSVPReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSVPReaderUITests.swift; sourceTree = "<group>"; };
 		7A6BBA001DAB58B600CBADB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A6BBA0C1DAB66A000CBADB7 /* Text.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				7A6BB9E71DAB58B600CBADB7 /* LaunchScreen.storyboard */,
 				7A6BB9EA1DAB58B600CBADB7 /* Info.plist */,
 				7A6BB9E21DAB58B600CBADB7 /* RSVPReader.xcdatamodeld */,
+				7A6BBA0C1DAB66A000CBADB7 /* Text.swift */,
 			);
 			path = RSVPReader;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			files = (
 				7A6BB9DE1DAB58B600CBADB7 /* ViewController.swift in Sources */,
 				7A6BB9DC1DAB58B600CBADB7 /* AppDelegate.swift in Sources */,
+				7A6BBA0D1DAB66A000CBADB7 /* Text.swift in Sources */,
 				7A6BB9E41DAB58B600CBADB7 /* RSVPReader.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
