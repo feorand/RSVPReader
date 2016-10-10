@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import Foundation
 
 class ViewController: UIViewController {
     
     @IBOutlet weak var currentWordLabel: UILabel!
     
     var text: Text!
+    var timer: Timer = Timer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,11 +30,22 @@ class ViewController: UIViewController {
     }
 
     @IBAction func startReading() {
-        currentWordLabel.text = text.showNextWord()
+        timer.invalidate()
+        
+        timer = Timer.scheduledTimer(withTimeInterval: 0.7, repeats: true) { currentTimer in
+            let nextWord = self.text.showNextWord()
+            
+            if nextWord == nil {
+                currentTimer.invalidate()
+                return
+            }
+
+            self.currentWordLabel.text = nextWord
+        }
     }
     
     @IBAction func stopReading() {
-        
+        timer.invalidate()
     }
     
 }
