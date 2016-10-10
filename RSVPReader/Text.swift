@@ -11,11 +11,24 @@ import Foundation
 class Text {
     
     let words: [String]
+    let count: Int
     
-    var currentWord = 0
+    var nextWord = 0
     
     init(fromSource text:String) {
         words = text.components(separatedBy: " ")
+        count = words.count
+    }
+    
+    func showNextWord() -> String? {
+        guard nextWord < count else {
+            return nil
+        }
+        
+        let currentWord = nextWord
+        nextWord += 1
+        
+        return words[currentWord]
     }
     
 }
