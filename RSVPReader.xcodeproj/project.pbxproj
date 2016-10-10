@@ -16,6 +16,7 @@
 		7A6BB9F41DAB58B600CBADB7 /* RSVPReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6BB9F31DAB58B600CBADB7 /* RSVPReaderTests.swift */; };
 		7A6BB9FF1DAB58B600CBADB7 /* RSVPReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6BB9FE1DAB58B600CBADB7 /* RSVPReaderUITests.swift */; };
 		7A6BBA0D1DAB66A000CBADB7 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6BBA0C1DAB66A000CBADB7 /* Text.swift */; };
+		7A6BBA0F1DAB735800CBADB7 /* TextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6BBA0E1DAB735800CBADB7 /* TextTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		7A6BB9FE1DAB58B600CBADB7 /* RSVPReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSVPReaderUITests.swift; sourceTree = "<group>"; };
 		7A6BBA001DAB58B600CBADB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A6BBA0C1DAB66A000CBADB7 /* Text.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		7A6BBA0E1DAB735800CBADB7 /* TextTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 			children = (
 				7A6BB9F31DAB58B600CBADB7 /* RSVPReaderTests.swift */,
 				7A6BB9F51DAB58B600CBADB7 /* Info.plist */,
+				7A6BBA0E1DAB735800CBADB7 /* TextTests.swift */,
 			);
 			path = RSVPReaderTests;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A6BBA0F1DAB735800CBADB7 /* TextTests.swift in Sources */,
 				7A6BB9F41DAB58B600CBADB7 /* RSVPReaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
