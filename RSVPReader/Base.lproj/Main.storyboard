@@ -24,10 +24,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emc-ZE-Xb0">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopReading" destination="BYZ-38-t0r" eventType="touchUpInside" id="yS9-03-5Mr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3f-Gd-bRS">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startReading" destination="BYZ-38-t0r" eventType="touchUpInside" id="iZz-NT-0Cw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="A3f-Gd-bRS" firstAttribute="centerX" secondItem="tl7-GC-uFF" secondAttribute="centerX" id="NEZ-2K-kd9"/>
+                            <constraint firstItem="A3f-Gd-bRS" firstAttribute="top" secondItem="tl7-GC-uFF" secondAttribute="bottom" constant="16" id="kSn-kd-j79"/>
+                            <constraint firstItem="emc-ZE-Xb0" firstAttribute="centerX" secondItem="A3f-Gd-bRS" secondAttribute="centerX" id="nWx-gd-Uah"/>
                             <constraint firstItem="tl7-GC-uFF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vxw-Ti-90E"/>
+                            <constraint firstItem="emc-ZE-Xb0" firstAttribute="top" secondItem="A3f-Gd-bRS" secondAttribute="bottom" constant="8" id="xbL-zc-VCo"/>
                             <constraint firstItem="tl7-GC-uFF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xbM-K8-eRW"/>
                         </constraints>
                     </view>
