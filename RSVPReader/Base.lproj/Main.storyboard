@@ -38,10 +38,28 @@
                                     <action selector="startReading" destination="BYZ-38-t0r" eventType="touchUpInside" id="iZz-NT-0Cw"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8W-OA-Blw">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="&lt;&lt;&lt;"/>
+                                <connections>
+                                    <action selector="moveBackward" destination="BYZ-38-t0r" eventType="touchUpInside" id="OLy-mj-J4M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvw-xb-Vjj">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="&gt;&gt;&gt;"/>
+                                <connections>
+                                    <action selector="moveForward" destination="BYZ-38-t0r" eventType="touchUpInside" id="o3G-bH-R9R"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="A3f-Gd-bRS" firstAttribute="leading" secondItem="V8W-OA-Blw" secondAttribute="trailing" constant="8" id="DYX-sO-bs4"/>
                             <constraint firstItem="A3f-Gd-bRS" firstAttribute="centerX" secondItem="tl7-GC-uFF" secondAttribute="centerX" id="NEZ-2K-kd9"/>
+                            <constraint firstItem="qvw-xb-Vjj" firstAttribute="baseline" secondItem="A3f-Gd-bRS" secondAttribute="baseline" id="O1b-TK-WaI"/>
+                            <constraint firstItem="qvw-xb-Vjj" firstAttribute="leading" secondItem="A3f-Gd-bRS" secondAttribute="trailing" constant="8" id="ckl-Ab-7a1"/>
+                            <constraint firstItem="V8W-OA-Blw" firstAttribute="baseline" secondItem="A3f-Gd-bRS" secondAttribute="baseline" id="gUT-Ch-fHw"/>
                             <constraint firstItem="A3f-Gd-bRS" firstAttribute="top" secondItem="tl7-GC-uFF" secondAttribute="bottom" constant="16" id="kSn-kd-j79"/>
                             <constraint firstItem="emc-ZE-Xb0" firstAttribute="centerX" secondItem="A3f-Gd-bRS" secondAttribute="centerX" id="nWx-gd-Uah"/>
                             <constraint firstItem="tl7-GC-uFF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vxw-Ti-90E"/>

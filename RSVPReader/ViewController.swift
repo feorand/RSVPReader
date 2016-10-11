@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     @IBAction func startReading() {
         timer.invalidate()
         
-        timer = Timer.scheduledTimer(withTimeInterval: 0.7, repeats: true) { currentTimer in
+        timer = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true) { currentTimer in
             let nextWord = self.text.showNextWord()
             
             if nextWord == nil {
@@ -46,6 +46,24 @@ class ViewController: UIViewController {
     
     @IBAction func stopReading() {
         timer.invalidate()
+    }
+    
+    @IBAction func moveBackward() {
+        if timer.isValid {
+            return
+        }
+        
+        text.moveBackward(numberOfWords: 3)
+        currentWordLabel.text = text.showNextWord()
+    }
+    
+    @IBAction func moveForward() {
+        if timer.isValid {
+            return
+        }
+        
+        text.moveForward(numberOfWords: 3)
+        currentWordLabel.text = text.showNextWord()
     }
     
 }
