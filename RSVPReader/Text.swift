@@ -31,4 +31,12 @@ class Text {
         return words[currentWord]
     }
     
+    func moveBackward(numberOfWords: Int) {
+        nextWord = max(0, nextWord - numberOfWords)
+    }
+    
+    func moveForward(numberOfWords: Int) {
+        nextWord = min(count, numberOfWords + nextWord)
+    }
+    
 }
