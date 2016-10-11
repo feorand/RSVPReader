@@ -20,12 +20,22 @@ class TextTests: XCTestCase {
         text = Text(fromSource: sample)
     }
     
-    func testWords() {
-        XCTAssertEqual(text.words[0], "Lorem")
-    }
-    
     func testShowNextWord() {
         XCTAssertEqual(text.showNextWord(), "Lorem")
         XCTAssertEqual(text.showNextWord(), "ipsum")
+    }
+    
+    func testMoveForward() {
+        let _ = text.showNextWord()
+        text.moveForward(numberOfWords: 3)
+        XCTAssertEqual(text.showNextWord(), "sit")
+    }
+    
+    func testMoveBackward() {
+        let _ = text.showNextWord()
+        let _ = text.showNextWord()
+        let _ = text.showNextWord()
+        text.moveBackward(numberOfWords: 3)
+        XCTAssertEqual(text.showNextWord(), "Lorem")
     }
 }
