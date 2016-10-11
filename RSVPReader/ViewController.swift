@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         let sourceString = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt odio eget posuere egestas. Curabitur rhoncus nisl mi, vel efficitur sapien posuere pellentesque. Suspendisse potenti. Proin quis fringilla urna, vel ultricies eros. Etiam nisl felis, mollis sed blandit et, congue quis magna. Nam venenatis erat ut accumsan placerat. Cras quis augue purus. In id ex lobortis, eleifend arcu id, aliquet lacus. Nunc non ultrices ligula, quis tristique augue. Ut est massa, lacinia eget porttitor vel, pretium pellentesque massa. Nullam vestibulum dictum tortor et facilisis."
 
         text = Text(fromSource: sourceString)
-        currentWordLabel.text = text.showNextWord()
+        currentWordLabel.text = text.currentWord
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,14 +35,15 @@ class ViewController: UIViewController {
         timer.invalidate()
         
         timer = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true) { currentTimer in
-            let nextWord = self.text.showNextWord()
             
-            if nextWord == nil {
+            do {
+                try self.text.moveNext()
+            } catch {
                 currentTimer.invalidate()
                 return
             }
-
-            self.currentWordLabel.text = nextWord
+            
+            self.currentWordLabel.text = self.text.currentWord
         }
     }
     
@@ -56,7 +57,7 @@ class ViewController: UIViewController {
         }
         
         text.moveBackward(numberOfWords: 3)
-        currentWordLabel.text = text.showNextWord()
+        currentWordLabel.text = text.currentWord
     }
     
     @IBAction func moveForward() {
@@ -65,7 +66,7 @@ class ViewController: UIViewController {
         }
         
         text.moveForward(numberOfWords: 3)
-        currentWordLabel.text = text.showNextWord()
+        currentWordLabel.text = text.currentWord
     }
     
 }
